@@ -1,0 +1,33 @@
+[project]
+name = "dev_pliot"
+version = "0.1.6"
+description = "A cli helper tool that helps with day to day cli commands and automates software development"
+authors = [
+    { name = "tanveer", email = "tanvoid0@gmail.com" }
+]
+license = "MIT"
+readme = "README.md"
+keywords = ['cli', 'python', 'automation', 'textual', 'configuration', 'development']
+requires-python = ">=3.8,<3.13"
+
+[tool.poetry.dependencies]
+click='*'
+colorama='*'
+textual='*'
+ollama='*'
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+pilot = "dev_pliot:cli"
+
+[tool.poetry]
+packages = [
+    { include = "bot" },
+    { include = "utils" },
+]
+include = [
+    "assets/images/cyborg.png"  # Include the demo image in the distribution
+]
