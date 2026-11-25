@@ -1,0 +1,8 @@
+ProjectTable {
+    layout: horizontal;
+    min-width: 50;
+    background: $boost;
+    padding: 1;
+    margin: 1;
+    height: 5;
+}

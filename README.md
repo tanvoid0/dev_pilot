@@ -7,7 +7,7 @@ A CLI helper tool that helps with day-to-day commands and automates software dev
 To install this tool via **pip**, run:
 
 ```bash
-pip install retan
+pip install dev_pilot
 pip install --editable .
 ```
 

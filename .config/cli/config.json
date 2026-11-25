@@ -1,0 +1,11 @@
+{
+    "path": "/media/tan/ExternalDrive/project/production/dev_pilot/.config/cli",
+    "db_reset": false,
+    "project": {
+        "project_id": 1
+    },
+    "docker": {
+        "pre_tag": null,
+        "post_tag": null
+    }
+}
