@@ -30,7 +30,7 @@ class FileUtil:
             raise FileNotFoundError(f"File {path} not found.")
         if file_type is None:
             return file_path.read_text(encoding=FileUtil.encoding)
-        elif file_type is 'json':
+        elif file_type == 'json':
             return json.loads(file_path.read_text(encoding=FileUtil.encoding))
         else:
             raise NotImplementedError(f'invalid file type - {file_type}')

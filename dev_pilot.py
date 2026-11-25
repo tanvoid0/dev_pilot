@@ -1,9 +1,10 @@
 import click
 
+from modules.dictionary.cli import dictionary
 from modules.stopwatch.stopwatch import stopwatch
-from utils.config import Config, config as config_group
+from modules.config.config import Config, config as config_group
 from modules.bot.cyborg import cyborg
-
+from modules.project.cli import project
 @click.group()
 @click.version_option()
 @click.pass_context
@@ -19,7 +20,9 @@ def cli(ctx: click.Context):
 # Register the `config` commands
 cli.add_command(config_group)
 cli.add_command(cyborg)
+cli.add_command(dictionary)
 cli.add_command(stopwatch)
+cli.add_command(project)
 
 if __name__ == "__main__":
     cli()
